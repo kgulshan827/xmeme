@@ -1,0 +1,53 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+    
+    .head_text {
+        color: white;
+    }
+    
+    .card {
+        box-shadow: 1px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .card-img-top{
+        height: 220px;
+        width: auto;
+    }
+</style>
+
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to my Xmeme </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="card-w-100 mb-2 mb-sm-5" style="align-items: center;">
+            {% for memes in meme %}
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src={{ memes.url }} alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">{{ memes.caption }}</h4>
+                  <p class="card-text">{{memes.meme_owner }}</p>
+                  
+                </div>
+              </div>
+            {% endfor %}
+        </div>
+        </div>
+{% endblock %}

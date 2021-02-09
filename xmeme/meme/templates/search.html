@@ -1,0 +1,41 @@
+
+{% extends "base.html" %} 
+{% block content %}
+
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #fdfdfd;
+    }
+    
+    .head_text {
+        color: white;
+    }
+    
+    .card {
+        box-shadow: 1px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .card-img-top{
+        height: 220px;
+        width: auto;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="card-w-100 mb-2 mb-sm-5" style="align-items: center;">
+            {% for memes in meme %}
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src={{ memes.meme_url }} alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">{{ memes.caption }}</h4>
+                  <p class="card-text">{{memes.meme_owner }}</p>
+                  
+                </div>
+              </div>
+            {% endfor %}
+        </div>
+        </div>
+{% endblock %}
