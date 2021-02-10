@@ -27,7 +27,7 @@ SECRET_KEY = '30lo4w(^vbkf@2ru&yekl8l2tcvbmy+d-wy1fr=*tku&nuw5bt'
 DEBUG = False
 
 ALLOWED_HOSTS = ['localhost',
-'127.0.0.1']
+'127.0.0.1','mynewxmeme.herokuapp.com']
 
 
 # Application definition
