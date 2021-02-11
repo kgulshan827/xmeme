@@ -26,8 +26,7 @@ SECRET_KEY = '30lo4w(^vbkf@2ru&yekl8l2tcvbmy+d-wy1fr=*tku&nuw5bt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost',
-'127.0.0.1','mynewxmeme.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,10 +124,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-
 STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 STATIC_URL = '/static/'
-
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
