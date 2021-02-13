@@ -28,7 +28,7 @@
         <div class="card-w-100 mb-2 mb-sm-5" style="align-items: center;">
             {% for memes in meme %}
             <div class="card" style="width:400px">
-                <img class="card-img-top" src={{ memes.meme_url }} alt="Card image">
+                <img class="card-img-top" src={{ memes.url }} alt="Card image">
                 <div class="card-body">
                   <h4 class="card-title">{{ memes.caption }}</h4>
                   <p class="card-text">{{memes.meme_owner }}</p>
