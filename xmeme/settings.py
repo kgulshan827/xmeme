@@ -12,7 +12,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+<<<<<<< HEAD
 from decouple import config
+=======
+>>>>>>> c8726f2c62dc8c57480b50510552aded5993134e
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,12 +25,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['localhost','127.0.0.1','mynewxmeme.herokuapp.com']
+=======
+SECRET_KEY = '30lo4w(^vbkf@2ru&yekl8l2tcvbmy+d-wy1fr=*tku&nuw5bt'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = ['localhost',
+'127.0.0.1']
+>>>>>>> c8726f2c62dc8c57480b50510552aded5993134e
 
 
 # Application definition
@@ -47,7 +60,10 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+<<<<<<< HEAD
     'whitenoise.middleware.WhiteNoiseMiddleware',
+=======
+>>>>>>> c8726f2c62dc8c57480b50510552aded5993134e
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -125,6 +141,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+<<<<<<< HEAD
 STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 STATIC_URL = '/static/'
 MEDIA_URL='/media/'
@@ -133,3 +150,6 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 SITE_ID = 1
 LOGIN_REDIRECT_URL = "/"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+=======
+STATIC_URL = '/static/'
+>>>>>>> c8726f2c62dc8c57480b50510552aded5993134e
