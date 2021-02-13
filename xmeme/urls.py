@@ -15,19 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-<<<<<<< HEAD
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
-=======
->>>>>>> c8726f2c62dc8c57480b50510552aded5993134e
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('meme.urls')),
 ]
-<<<<<<< HEAD
 urlpatterns+=staticfiles_urlpatterns()
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-=======
->>>>>>> c8726f2c62dc8c57480b50510552aded5993134e
